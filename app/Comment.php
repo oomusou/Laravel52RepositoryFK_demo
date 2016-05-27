@@ -30,4 +30,9 @@ class Comment extends Model
         'email',
         'comment'
     ];
+
+    public function post()
+    {
+        return $this->belongsTo('App\Post');
+    }
 }
