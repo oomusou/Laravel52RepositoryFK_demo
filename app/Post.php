@@ -28,4 +28,9 @@ class Post extends Model
         'description',
         'content'
     ];
+
+    public function comments()
+    {
+        return $this->hasMany('App\Comment');
+    }
 }
